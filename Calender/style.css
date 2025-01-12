@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+    background-color: #E6E6E6;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainH {
+    position: relative;
+    font-weight: bold;
+    align-self: center;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#caption {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.calenderButton {
+    border: none;
+    background: none;
+}
+
+.calenderButton:hover {
+    cursor: pointer;
+}
