@@ -1,0 +1,8 @@
+body {
+  background-color: orange;
+}
+
+#mainDiv {
+    display: flex;
+    justify-content: center;
+}

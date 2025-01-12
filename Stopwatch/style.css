@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(255, 174, 0);
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button {
+    padding: 0.5em 1.5em; /* Поля по вертикали и горизонтали */
+    background-color: transparent; /* Прозрачный цвет фона */
+    font-size: 0.9em; /* Размер текста */
+    color: #ffffff; /* Серый цвет текста */
+    border: 2px solid #ffffff; /* Параметры рамки */
+    margin: 1rem; /* Отступ снизу */
+    cursor: pointer;
+    
+}
+
+button:hover {
+    color: rgb(255, 174, 0); 
+    border: 2px solid rgb(255, 174, 0); /* Параметры рамки */
+    background-color: white; /* Прозрачный цвет фона */
+}
+
+h1 {
+    color: white;
+    align-self: center;
+}
+
+#time {
+    color: white;
+    align-self: center;
+}

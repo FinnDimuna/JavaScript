@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    outline: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', serif;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+
+.header a {
+    color: white;
+}
+
+
+.container > .header {
+    width: 100vw;;
+    position: fixed;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+
+
+.container > .header span {
+    align-self: center;
+}
+
+.container > .header > div:nth-child(1n) {
+    display: flex;
+    height: 5vh;
+    font-size: 15px;
+    padding: 0 20px 0 20px;
+
+    overflow-y: hidden;
+
+}
+
+.container > .header > div:nth-child(1n):hover {
+    background-color: grey;
+}
+
+.main, .main > .second_item {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.main {
+    margin-top: 5vh;
+}
+
+.first_item {
+    width: 100vw;
+}
+
+.second_item > .the_band {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.second_item > .we_love {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.second_item > .text {
+    max-width: 40vw;
+    align-self: center;
+}
+
+.bandmember {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    width: 40vw;
+}
+
+.bandmember > div {
+    text-align: center;
+}
+
+.bandmember > div > img {
+    margin-top: 20px;
+    width: 140px;
+    height: 140px;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+
+.main > .third_item {
+    background-color: black;
+    color: white;
+}
+
+.third_item > .header {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.third_item > .gray_remember {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+    margin-bottom: 40px;
+}
+
+.third_item {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.third_item > .tickets_sold {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: white;
+    color: gray;
+    width: 40vw;
+}
+
+.tickets_sold > div:nth-child(1n) {
+  border: 0.1px solid rgba(128, 128, 128, 0.233);
+  padding: 10px;
+  margin-top: -1px;
+}
+
+.tickets_sold > div > .sold_out {
+    color: white;
+    background-color: #f44336;
+    padding: 2px 5px 2px;
+    margin-left: 10px;
+}
+
+.third_item > .cities {
+    margin-top: 30px;
+    display: flex;
+    align-self: center;
+    width: 40vw;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    height: 400px;
+}
+
+.cities > div:nth-child(1n) {
+    color: black;
+    width: 12.7vw;
+}
+
+.cities > div > img {
+    height: 50%;
+}
+
+.cities > div > .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: -5px;
+    padding: 15px;
+    height: 50%;
+    font-size: 15px;
+    background-color: white;
+}
+
+.cities > div > .text > .name {
+    font-weight: bold;
+}
+
+.cities > div > .text > .date {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.cities > div > .text > .button {
+    background-color: black;
+    color: white;
+    width: 40%;
+    padding: 7px;
+    border: 2px solid black;
+}
+
+.cities > div > .text > .button:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    width: 40%;
+    padding: 7px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.fourth_item > .main_text {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.fourth_item > .gray_text {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+    margin-bottom: 40px;
+}
+
+.fourth_item > .container {
+    display: flex;
+    width: 40vw;
+}

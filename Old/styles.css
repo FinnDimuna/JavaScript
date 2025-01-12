@@ -1,0 +1,63 @@
+body {
+    background-color: gray;
+}
+
+
+.button1 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    border: none;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    transition: all 0.3s;
+    
+}
+
+
+.button1:hover {
+    letter-spacing: 5px;
+}
+
+.button2 {
+    position: absolute;
+    height: 50px;
+    width: 170px;
+    top: 200px;
+    left: 100px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    box-shadow: 5px 5px black;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.button2:hover {
+    
+    box-shadow: -5px -5px black;
+    content: "Нажми меня!";
+}
+
+.button2:active {
+    box-shadow: none;
+    transform: translate(-5px, -5px);
+    
+}
+
+
+.button3 {
+    position: absolute;
+    height: 50px;
+    width: 170px;
+    top: 400px;
+    left: 100px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    box-shadow: 5px 5px black;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
