@@ -23,8 +23,6 @@ calender.id = 'container';
 let mainHeader = document.createElement('div');
 mainHeader.id = 'mainH';
 
-
-
 let caption = document.createElement('div');
 caption.id = 'caption';
 
@@ -38,15 +36,9 @@ increaseButton.id = 'iButton';
 increaseButton.innerText = '→';
 increaseButton.className = 'calenderButton';
 
-
-
-
 function createCalender(year, month) {
-
     let dDate = new Date(year, month);
-
     let table = '<table><tr><th>ПН</th><th>ВТ</th><th>СР</th><th>ЧТ</th><th>ПТ</th><th>СБ</th><th>ВС</th></tr><tr>';
-
 
     function GetDay(date) {
         let day = date.getDay();
@@ -88,9 +80,6 @@ function createCalender(year, month) {
         document.getElementById('mainH').append(caption);
         document.getElementById('caption').before(decreaseButton);
         document.getElementById('caption').after(increaseButton);
-
-
-
     }
 
 }
@@ -99,7 +88,6 @@ function decreaseCalender() {
     if (todayMonth === 0) {
         todayMonth = 11;
         --todayYear;
-
     } else {
         --todayMonth;
     }
@@ -118,6 +106,5 @@ function increaseCalender() {
 }
 
 createCalender(todayYear, todayMonth);
-
 document.getElementById('dButton').addEventListener('click', decreaseCalender);
 document.getElementById('iButton').addEventListener('click', increaseCalender);

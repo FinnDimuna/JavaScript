@@ -1,0 +1,16 @@
+* {
+    font-family: "Times New Roman", Times, serif;
+}
+
+#sort:hover {
+    cursor: pointer;
+}
+
+#sort {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font-weight: bold;
+}
+
