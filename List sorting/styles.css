@@ -2,11 +2,11 @@
     font-family: "Times New Roman", Times, serif;
 }
 
-#sort:hover {
+.sort:hover {
     cursor: pointer;
 }
 
-#sort {
+.sort {
     margin: 0;
     padding: 0;
     border: none;

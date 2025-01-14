@@ -5,7 +5,7 @@ for (let button of buttons) {
 
 let sorted = 0;
 
-function NameSort() {
+function tableSort(sortIndex) {
 
     let tableBody = document.querySelector(`#table tbody`);
     console.log(document.querySelectorAll('th').length);
@@ -17,19 +17,21 @@ function NameSort() {
     if (sorted !== 1) {
         sorted = 1;
         arrRows.sort((a, b) => {
-            let aText = a.querySelector('td:nth-of-type(1)').innerText;
-            let bText = b.querySelector('td:nth-of-type(2)').innerText;
+            let aText = a.querySelector(`td:nth-of-type(${sortIndex})`).innerText;
+            let bText = b.querySelector(`td:nth-of-type(${sortIndex})`).innerText;
             return aText.localeCompare(bText);
         });
     } else {
         sorted = 0;
         arrRows.sort((a, b) => {
-            let aText = a.querySelector('td:nth-of-type(1)').innerText;
-            let bText = b.querySelector('td:nth-of-type(2)').innerText;
+            let aText = a.querySelector(`td:nth-of-type(${sortIndex})`).innerText;
+            let bText = b.querySelector(`td:nth-of-type(${sortIndex})`).innerText;
             return bText.localeCompare(aText);
         });
     }
     arrRows.forEach(row => tableBody.append(row));
 }
 
-document.getElementById('sort').addEventListener('click', NameSort);
+document.getElementById('sortByName').addEventListener('click', tableSort.bind(null, 1));
+document.getElementById('sortBySurname').addEventListener('click', tableSort.bind(null, 2));
+document.getElementById('sortByAge').addEventListener('click', tableSort.bind(null, 3));
