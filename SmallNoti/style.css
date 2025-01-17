@@ -6,6 +6,6 @@ body * {
 
 .notification.welcome {
     background-color: yellow;
-    color: red;
+    color: green;
     font-weight: bold;
 }
