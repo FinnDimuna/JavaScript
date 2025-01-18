@@ -9,17 +9,7 @@ let Notification = {
     this.notification.style.cssText = ` top: ${top}px; right: ${right}px;`
 
     document.body.append(this.notification);
-    let state = 0
-    this.Interval = setInterval(() => {
-        if (state === 0) {
-            state = 1;
-            this.notification.style.display = 'none';
-        } else {
-            state = 0
-            this.notification.style.display = 'block';
-        }
-
-    }, 1500);
+    this.showNotification();
     },
 
     stopNotification: function () {
