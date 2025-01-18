@@ -132,7 +132,7 @@
 }
 
 .tickets_sold > div:nth-child(1n) {
-  border: 0.1px solid rgba(128, 128, 128, 0.233);
+  border: 0.1px solid rgba(128, 128, 128, 0.234);
   padding: 10px;
   margin-top: -1px;
 }
