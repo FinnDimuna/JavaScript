@@ -4,6 +4,7 @@
 
 .sort:hover {
     cursor: pointer;
+    background-color: grey;
 }
 
 .sort {
