@@ -9,7 +9,7 @@
 
 #ball {
     position: absolute;
-    transition: all 1s;
+    transition: all 1s ease-out;
     left: 0px;
     top: 0px;
 }
